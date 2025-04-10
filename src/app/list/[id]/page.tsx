@@ -1,9 +1,17 @@
+import { fetchBooksByList } from "@/app/lib/api";
+
 export default async function Page({ params }: { params: { id: string } }) {
-  const resParam = await params;
-  console.log("📢[page.tsx:3]: resParam: ", resParam);
+  const {
+    results: { books },
+  } = await fetchBooksByList(params.id);
+
   return (
     <div>
-      <h1>{resParam.id}</h1>
+      <ul>
+        {books.map((book) => (
+          <li key={book.title}>{book.title}</li>
+        ))}
+      </ul>
     </div>
   );
 }
