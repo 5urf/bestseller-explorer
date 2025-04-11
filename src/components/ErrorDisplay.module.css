@@ -1,0 +1,46 @@
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  padding: 2rem;
+}
+
+.errorCard {
+  background-color: #f8f5f2;
+  border: 0.1rem solid #d3c7b1;
+  border-radius: 0.5rem;
+  padding: 3rem;
+  max-width: 50rem;
+  text-align: center;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.05);
+}
+
+.errorTitle {
+  font-size: 2.4rem;
+  color: #8b0000;
+  margin-bottom: 1.5rem;
+}
+
+.errorMessage {
+  font-size: 1.6rem;
+  color: #4a4238;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.resetButton {
+  background-color: #6e6356;
+  color: #f8f5f2;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.3s ease;
+}
+
+.resetButton:hover {
+  background-color: #4a4238;
+}

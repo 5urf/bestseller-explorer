@@ -42,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' className={lora.className}>
+    <html lang='ko' className={lora.className}>
       <body>
         <Header />
         <main>{children}</main>
