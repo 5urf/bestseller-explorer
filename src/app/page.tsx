@@ -1,4 +1,4 @@
-import { fetchBestsellerLists } from "@/app/lib/api";
+import { fetchBestsellerLists } from "@/lib/api";
 import { Metadata } from "next";
 import Link from "next/link";
 import styles from "./page.module.css";

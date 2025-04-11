@@ -1,4 +1,4 @@
-import { fetchBooksByList } from "@/app/lib/api";
+import { fetchBooksByList } from "@/lib/api";
 
 export default async function Page({ params }: { params: { id: string } }) {
   const {
