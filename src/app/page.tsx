@@ -1,6 +1,6 @@
+import CategoryCard from "@/components/CategoryCard";
 import { fetchBestsellerLists } from "@/lib/api";
 import { Metadata } from "next";
-import Link from "next/link";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -14,15 +14,11 @@ export default async function Home() {
     <main className={styles["container"]}>
       <section className={styles["gridContainer"]}>
         {results.map((result) => (
-          <Link
+          <CategoryCard
             key={result.list_name}
-            href={`/list/${result.list_name_encoded}`}
-            className={styles["categoryLink"]}
-          >
-            <article className={styles["categoryCard"]}>
-              <h2 className={styles["categoryName"]}>{result.display_name}</h2>
-            </article>
-          </Link>
+            displayName={result.display_name}
+            listNameEncoded={result.list_name_encoded}
+          />
         ))}
       </section>
     </main>
