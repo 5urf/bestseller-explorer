@@ -25,15 +25,8 @@
   color: #6e6356;
   font-size: 1.8rem;
   font-weight: 500;
+  line-height: 1.6;
   text-align: center;
-  font-family: "Playfair Display", serif;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  line-clamp: 2;
-  max-height: 100%;
 }
 
 @media (max-width: 76.8rem) {

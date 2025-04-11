@@ -1,7 +1,15 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import "@/styles/globals.css";
 import { Metadata } from "next";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+
+import { Lora } from "next/font/google";
+
+const lora = Lora({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -34,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang='en' className={lora.className}>
       <body>
         <Header />
         <main>{children}</main>
