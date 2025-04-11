@@ -1,23 +1,23 @@
-"use client";
-
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import styles from "./Header.module.css";
 
 const Header = () => {
-  const pathname = usePathname();
-
   return (
-    <header>
-      <div>
-        <Link href='/'>Surf Bestsellers</Link>
-      </div>
-      <nav>
-        <ul>
-          <li className={pathname === "/" ? "active" : ""}>
-            <Link href='/'>Home</Link>
+    <header className={styles["header"]}>
+      <nav className={styles["nav"]}>
+        <Link href='/' className={styles["logo"]}>
+          The New York Times Best Seller
+        </Link>
+        <ul className={styles["navList"]}>
+          <li className={styles["navItem"]}>
+            <Link href='/' className={styles["navLink"]}>
+              Home
+            </Link>
           </li>
-          <li className={pathname === "/about" ? "active" : ""}>
-            <Link href='/about'>About</Link>
+          <li className={styles["navItem"]}>
+            <Link href='/about' className={styles["navLink"]}>
+              About
+            </Link>
           </li>
         </ul>
       </nav>
