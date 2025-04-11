@@ -1,0 +1,70 @@
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-family: "Playfair Display", serif;
+}
+
+.aboutSection {
+  background-color: #f8f5f2;
+  border: 0.1rem solid #d3c7b1;
+  border-radius: 0.8rem;
+  padding: 3rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.05);
+}
+
+.description {
+  color: #6e6356;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.description p {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 76.8rem) {
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  .aboutSection {
+    padding: 2rem;
+  }
+
+  .description {
+    font-size: 1.4rem;
+  }
+}
+
+@keyframes grainyFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: contrast(90%) brightness(110%) blur(1px) grayscale(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: contrast(100%) brightness(100%) blur(0) grayscale(0%);
+  }
+}
+
+.grainy-p {
+  opacity: 0;
+  animation: grainyFadeIn 2s ease-out forwards;
+  transform: translateY(20px);
+}
+
+.grainy-p:nth-of-type(1) {
+  animation-delay: 0.3s;
+}
+.grainy-p:nth-of-type(2) {
+  animation-delay: 0.6s;
+}
+.grainy-p:nth-of-type(3) {
+  animation-delay: 0.9s;
+}
+.grainy-p:nth-of-type(4) {
+  animation-delay: 1.2s;
+}

@@ -1,9 +1,10 @@
 import { fetchBestsellerLists } from "@/app/lib/api";
+import { Metadata } from "next";
 import Link from "next/link";
 import styles from "./page.module.css";
 
-export const metadata = {
-  title: "Home",
+export const metadata: Metadata = {
+  title: "Home | 뉴욕 타임즈 베스트셀러",
 };
 
 export default async function Home() {
