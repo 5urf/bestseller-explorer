@@ -1,21 +1,29 @@
 import { fetchBestsellerLists } from "@/app/lib/api";
 import Link from "next/link";
+import styles from "./page.module.css";
+
+export const metadata = {
+  title: "Home",
+};
 
 export default async function Home() {
   const { results } = await fetchBestsellerLists();
-  console.log("📢[page.tsx:6]: lists: ", results);
+
   return (
-    <div>
-      <ul>
-        {results?.map((result) => (
+    <main className={styles["container"]}>
+      <section className={styles["gridContainer"]}>
+        {results.map((result) => (
           <Link
             key={result.list_name}
             href={`/list/${result.list_name_encoded}`}
+            className={styles["categoryLink"]}
           >
-            <li>{result.display_name}</li>
+            <article className={styles["categoryCard"]}>
+              <h2 className={styles["categoryName"]}>{result.display_name}</h2>
+            </article>
           </Link>
         ))}
-      </ul>
-    </div>
+      </section>
+    </main>
   );
 }

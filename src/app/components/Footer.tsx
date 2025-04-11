@@ -4,9 +4,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className={styles.footer}>
-      <p className={styles.copyright}>
-        © {currentYear} Built by <span className={styles.highlight}>5urf</span>
+    <footer className={styles["footer"]}>
+      <p className={styles["copyright"]}>
+        © {currentYear} Built by
+        <span className={styles["highlight"]}>5urf</span>
       </p>
     </footer>
   );
