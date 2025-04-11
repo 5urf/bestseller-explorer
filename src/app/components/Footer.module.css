@@ -1,0 +1,30 @@
+.footer {
+  background-color: #f8f5f2;
+  border-top: 0.1rem solid #d3c7b1;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+.copyright {
+  max-width: 120rem;
+  margin: 0 auto;
+  color: #6e6356;
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+}
+
+.highlight {
+  font-weight: 700;
+  color: #4a4238;
+}
+
+@media (max-width: 76.8rem) {
+  .footer {
+    padding: 1rem;
+  }
+
+  .copyright {
+    font-size: 1.2rem;
+  }
+}
