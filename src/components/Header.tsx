@@ -6,7 +6,7 @@ const Header = () => {
     <header className={styles["header"]}>
       <nav className={styles["nav"]}>
         <Link href='/' className={styles["logo"]}>
-          The New York Times Best Seller
+          New York Times Best Seller
         </Link>
         <ul className={styles["navList"]}>
           <li className={styles["navItem"]}>
