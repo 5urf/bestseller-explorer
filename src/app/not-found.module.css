@@ -1,0 +1,38 @@
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 10rem 2rem;
+  text-align: center;
+}
+
+.content {
+  background-color: #f8f5f2;
+  border: 0.1rem solid #d3c7b1;
+  border-radius: 0.8rem;
+  padding: 4rem;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.title {
+  color: #6e6356;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.homeLink {
+  display: inline-block;
+  background-color: #8a7a65;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 1.5rem;
+}
+
+.homeLink:hover {
+  background-color: #6e6356;
+}
