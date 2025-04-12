@@ -3,15 +3,14 @@
   border: 0.1rem solid #d3c7b1;
   border-radius: 0.8rem;
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
 .bookCard:hover {
-  transform: translateY(-0.5rem);
-  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.2);
 }
 
 .bookContent {
@@ -78,26 +77,6 @@
   line-height: 1.6;
   margin-bottom: 2rem;
   flex-grow: 1;
-}
-
-.buyButton {
-  display: block;
-  background-color: #8a7a65;
-  color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 0.4rem;
-  font-weight: 600;
-  text-decoration: none;
-  text-align: center;
-  transition: background-color 0.3s ease;
-  font-size: 1.5rem;
-  width: 50%;
-  margin: 0 auto;
-  margin-top: auto;
-}
-
-.buyButton:hover {
-  background-color: #6e6356;
 }
 
 @media (max-width: 76.8rem) {

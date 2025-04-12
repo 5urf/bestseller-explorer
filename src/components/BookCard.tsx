@@ -2,6 +2,7 @@ import { formatWeeksOnList, getBookDescription } from "@/lib/utils/format";
 import { getBookImageUrl } from "@/lib/utils/image";
 import Image from "next/image";
 import styles from "./BookCard.module.css";
+import BuyLink from "./BuyLink";
 
 interface IBookCardProps {
   book: Book.Book;
@@ -31,16 +32,7 @@ const BookCard = ({ book }: IBookCardProps) => {
         <p className={styles["description"]}>
           {getBookDescription(book.description, book.title)}
         </p>
-        {book.amazon_product_url && (
-          <a
-            href={book.amazon_product_url}
-            target='_blank'
-            rel='noopener noreferrer'
-            className={styles["buyButton"]}
-          >
-            구매하기
-          </a>
-        )}
+        <BuyLink buyLinks={book.buy_links} />
       </div>
     </article>
   );

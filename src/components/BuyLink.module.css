@@ -1,0 +1,41 @@
+.buyOptions {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.buyLinksTitle {
+  color: #6e6356;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.buyLinksList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.buyLinkButton {
+  background-color: #f0e6d2;
+  color: #6e6356;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.4rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border: 1px solid #d3c7b1;
+}
+
+.buyLinkButton:hover {
+  background-color: #d3c7b1;
+  color: #4a3f35;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
