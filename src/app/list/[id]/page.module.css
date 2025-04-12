@@ -1,0 +1,42 @@
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.pageHeading {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.2rem solid #d3c7b1;
+}
+
+.title {
+  color: #6e6356;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.date {
+  color: #8a7a65;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.booksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 3rem;
+}
+
+@media (max-width: 76.8rem) {
+  .booksGrid {
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    gap: 2rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+}
