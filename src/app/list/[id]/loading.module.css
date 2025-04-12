@@ -1,0 +1,58 @@
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.headingSkeleton {
+  width: 40%;
+  height: 3rem;
+  margin: 0 auto 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.2rem solid #d3c7b1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 3rem;
+}
+
+.bookCardSkeleton {
+  background-color: #f8f5f2;
+  border: 0.1rem solid #d3c7b1;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skeletonContent {
+  width: 80%;
+  height: 60%;
+  background: linear-gradient(90deg, #f0e6d2 25%, #f8f5f2 50%, #f0e6d2 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 0.4rem;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@media (max-width: 76.8rem) {
+  .booksGrid {
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    gap: 2rem;
+  }
+}
