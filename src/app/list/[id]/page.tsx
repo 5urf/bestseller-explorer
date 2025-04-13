@@ -21,7 +21,7 @@ export async function generateMetadata({
       title: `${results.display_name}`,
       description: `${results.display_name} 카테고리의 뉴욕 타임즈 베스트셀러 도서 목록`,
     };
-  } catch (error) {
+  } catch {
     return {
       title: "베스트셀러 리스트",
     };
