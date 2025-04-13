@@ -11,7 +11,7 @@ export default async function Home() {
   const { results } = await fetchBestsellerLists();
 
   return (
-    <main className={styles["container"]}>
+    <div className={styles["container"]}>
       <section className={styles["gridContainer"]}>
         {results.map((result) => (
           <CategoryCard
@@ -21,6 +21,6 @@ export default async function Home() {
           />
         ))}
       </section>
-    </main>
+    </div>
   );
 }

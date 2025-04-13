@@ -67,7 +67,7 @@ declare namespace Book {
       normal_list_ends_at: number;
       updated: string;
       books: Book[];
-      corrections?: any[];
+      corrections?: unknown[];
     };
   }
 }

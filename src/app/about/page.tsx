@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className={styles["container"]}>
+    <div className={styles["container"]}>
       <section className={`${styles.aboutSection} vintage-fade`}>
         <article className={styles["description"]}>
           <p className={styles["grainy-p"]}>
@@ -29,6 +29,6 @@ export default function Page() {
           </p>
         </article>
       </section>
-    </main>
+    </div>
   );
 }

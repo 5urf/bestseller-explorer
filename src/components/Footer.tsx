@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className={styles["footer"]}>
       <p className={styles["copyright"]}>
         © {currentYear} Built by
-        <span className={styles["highlight"]}>5urf</span>
+        <span className={styles["highlight"]}> 5urf</span>
       </p>
     </footer>
   );
