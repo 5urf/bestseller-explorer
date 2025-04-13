@@ -6,9 +6,9 @@ import { notFound } from "next/navigation";
 import styles from "./page.module.css";
 
 interface IListPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export async function generateMetadata({
