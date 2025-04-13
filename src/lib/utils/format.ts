@@ -7,7 +7,7 @@ export const formatDate = (dateString: string): string => {
 };
 
 export const formatWeeksOnList = (weeksOnList: number): string => {
-  return weeksOnList > 0 ? `${weeksOnList}주 연속` : "신규";
+  return weeksOnList === 0 ? "신규 진입" : `${weeksOnList}주 연속 베스트셀러`;
 };
 
 export const getBookDescription = (
