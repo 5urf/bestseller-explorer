@@ -14,6 +14,7 @@ export default function CategoryCard({
     <Link href={`/list/${listNameEncoded}`} className={styles["categoryLink"]}>
       <article className={styles["categoryCard"]}>
         <h2 className={styles["categoryName"]}>{displayName}</h2>
+        <span className={styles["viewMore"]}>→</span>
       </article>
     </Link>
   );

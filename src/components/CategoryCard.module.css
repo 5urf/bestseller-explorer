@@ -29,6 +29,20 @@
   text-align: center;
 }
 
+.viewMore {
+  font-size: 1.4rem;
+  color: #8a7a65;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.categoryCard:hover .viewMore {
+  opacity: 1;
+}
+
 @media (max-width: 76.8rem) {
   .categoryCard {
     padding: 1.5rem;
