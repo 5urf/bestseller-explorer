@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div className={styles["container"]}>
-      <section className={`${styles.aboutSection} vintage-fade`}>
+      <section className={styles["aboutSection"]}>
         <article className={styles["description"]}>
           <p className={styles["grainy-p"]}>
             뉴욕 타임스 베스트셀러는 단순한 책 순위를 넘어서는 의미를 가집니다.
