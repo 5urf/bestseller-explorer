@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "About",
 };
 
-export default function Page() {
+export default function AboutPage() {
   return (
     <div className={styles["container"]}>
       <section className={styles["aboutSection"]}>

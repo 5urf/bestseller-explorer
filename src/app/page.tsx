@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Home | 뉴욕 타임즈 베스트셀러",
 };
 
-export default async function Home() {
+export default async function HomePage() {
   const { results } = await fetchBestsellerLists();
 
   return (
