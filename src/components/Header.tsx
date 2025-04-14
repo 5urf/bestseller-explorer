@@ -15,7 +15,7 @@ const Header = () => {
             </Link>
           </li>
           <li className={styles["navItem"]}>
-            <Link href='/about' className={styles["navLink"]} prefetch>
+            <Link href='/about' className={styles["navLink"]}>
               About
             </Link>
           </li>
