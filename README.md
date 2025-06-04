@@ -1,9 +1,34 @@
-# New York Times Best Seller
+# 뉴욕 타임즈 베스트셀러
 
-## Assignment 22
+뉴욕 타임즈에서 선정한 베스트셀러 리스트를 카테고리별로 탐색할 수 있는 웹 애플리케이션입니다.
 
-### Tech Stack
+## 주요 기능
 
-- **Next**
+- 카테고리별 베스트셀러 리스트 조회
+- 도서 상세 정보 확인 (랭킹, 저자, 설명, 표지)
+- 온라인 구매처 링크 제공
+- 반응형 디자인 지원
+- 로딩 및 에러 상태 처리
+
+## 기술 스택
+
+### 프론트엔드
+
+- **Next.js 15**
 - **TypeScript**
-- **React**
+- **CSS Modules**
+
+## 프로젝트 구조
+
+```
+app/
+├── (home)/             # 홈페이지 - 카테고리 목록
+├── list/[id]/          # 카테고리별 도서 목록
+├── about/              # 소개 페이지
+├── layout.tsx          # 루트 레이아웃
+├── error.tsx           # 에러 페이지
+└── not-found.tsx       # 404 페이지
+components/
+lib/
+types/
+```
