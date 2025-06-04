@@ -8,15 +8,15 @@ export const metadata: Metadata = {
 };
 
 export default async function HomePage() {
-  const { results } = await fetchBestsellerLists();
+  const results = await fetchBestsellerLists();
 
   return (
     <div className={styles["container"]}>
       <section className={styles["gridContainer"]}>
         {results.map((result) => (
           <CategoryCard
-            key={result.list_name}
-            displayName={result.display_name}
+            key={result.list_name_encoded}
+            displayName={result.name}
             listNameEncoded={result.list_name_encoded}
           />
         ))}

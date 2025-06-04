@@ -1,24 +1,29 @@
 const BASE_URL = "https://books-api.nomadcoders.workers.dev";
 
-export const fetchBestsellerLists =
-  async (): Promise<Book.BookListsResponse> => {
-    const response = await fetch(`${BASE_URL}/lists`);
+async function fetchAPI<T>(endpoint: string): Promise<T> {
+  try {
+    const response = await fetch(`${BASE_URL}${endpoint}`);
 
     if (!response.ok) {
-      throw new Error("Failed to fetch bestseller lists");
+      throw new Error(`Failed to fetch: ${response.status}`);
     }
 
-    return response.json();
-  };
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    throw error;
+  }
+}
 
-export const fetchBooksByList = async (
-  listName: string
-): Promise<Book.BookListDetailResponse> => {
-  const response = await fetch(`${BASE_URL}/list?name=${listName}`);
+export const fetchBestsellerLists = () => {
+  return fetchAPI<Book.BookListsResponse>("/lists");
+};
 
-  if (!response.ok) {
-    throw new Error(`Failed to fetch books for list: ${listName}`);
+export const fetchBooksByList = (listName: string) => {
+  if (!listName) {
+    throw new Error("List name is required");
   }
 
-  return response.json();
+  const encodedListName = encodeURIComponent(listName);
+  return fetchAPI<Book.BookListDetailResponse>(`/list?name=${encodedListName}`);
 };

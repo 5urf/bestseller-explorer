@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         hostname: "storage.googleapis.com",
         pathname: "/du-prd/books/images/**",
       },
+      {
+        protocol: "https",
+        hostname: "static01.nyt.com",
+        pathname: "/bestsellers/images/**",
+      },
     ],
   },
 };
